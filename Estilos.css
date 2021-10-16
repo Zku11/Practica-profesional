@@ -1,0 +1,37 @@
+*{
+	font-family: helvetica;
+	text-align: center;
+}
+
+.carac{
+	background-color: #eee;
+	margin: 10px 20%;
+	padding: 10px;
+}
+
+input, label{
+	display: inline-block;
+}
+
+input[type="radio"], input[type="number"]{
+	margin-right: 20px;
+}
+
+input[type="number"]{
+	width: 50px;
+}
+
+input:hover, label:hover{
+	cursor: pointer;
+}
+
+input[type="submit"]{
+	margin-top: 20px;
+	padding: 5px;
+	background-color: #0e0;
+}
+
+input[type="submit"]:hover{
+	cursor: pointer;
+	background-color: #0f0;
+}
