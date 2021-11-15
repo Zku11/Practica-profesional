@@ -1,5 +1,5 @@
 window.onload = function(){
-	tamanos = document.querySelectorAll("input[name='tamano']");
+	tamanos = document.getElementsByClassName("entrada");
 	botonCalcular = document.getElementById("calcular");
 	botonCalcular.addEventListener("click", Resultado, false);
 	salidaResultado = document.getElementById("resultado");
@@ -7,12 +7,11 @@ window.onload = function(){
 
 function Resultado(e){
 	e.preventDefault();
-	var costoTotal;
+	var costoTotal = 0;
 	for (const rb of tamanos) {
     	if (rb.checked) {
-            costoTotal = rb.value;
-            break;
+            costoTotal += parseInt(rb.value, 10);
         }
     }
-	salidaResultado.innerHTML = costoTotal;
+	salidaResultado.innerHTML = "$" + costoTotal;
 }

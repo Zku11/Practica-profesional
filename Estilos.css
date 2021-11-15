@@ -3,35 +3,70 @@
 	text-align: center;
 }
 
+h1{
+	font-size: 25px;
+}
+
 .carac{
 	background-color: #eee;
 	margin: 10px 20%;
 	padding: 10px;
+	border-radius: 10px;
 }
 
 input, label{
 	display: inline-block;
 }
 
-input[type="radio"], input[type="number"]{
-	margin-right: 20px;
+input[type="radio"], input[type="number"], input[type="checkbox"]{
+	margin-right: 30px;
+}
+
+input[type="checkbox"]:hover, input[type="submit"]:hover, button:hover, input[type="radio"]:hover{
+	cursor: pointer;
 }
 
 input[type="number"]{
 	width: 50px;
 }
 
-input:hover, label:hover{
-	cursor: pointer;
-}
-
 input[type="submit"]{
 	margin-top: 20px;
 	padding: 5px;
 	background-color: #0e0;
+	border-radius: 5px;
+	font-size: 17px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button{
+	background-color: #00a;
+	color: #fff;
+	border-radius: 3px;
+	margin: 1px;
+}
+
+button:hover{
+	background-color: #00f;
 }
 
 input[type="submit"]:hover{
-	cursor: pointer;
 	background-color: #0f0;
+}
+
+.signosMas{
+	font-size: 25px;
+}
+
+#resultado{
+	font-size: 30px;
 }

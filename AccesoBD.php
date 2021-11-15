@@ -2,9 +2,9 @@
 	class AccesoBD{
 		private static $direccion="localhost";
 		//Usar usuario de nivel bajo (no administrador)<<<<<<<<<<<<<<<<<<<<
-		private static $usuario="id17772144_root"; //root
-		private static $contrasena="bZfS[8#[Ur)6z=%"; //
-		private static $nombreBd="id17772144_calculadorabd";//calculadorabd
+		private static $usuario="root";
+		private static $contrasena="";
+		private static $nombreBd="calculadorabd";
 		private static $enlace=false;
 
 		//Devuelve siempre la misma conexión, si no existe se crea una.
